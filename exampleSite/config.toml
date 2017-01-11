@@ -2,8 +2,6 @@ baseurl = "https://example.org"
 languageCode = "en-us"
 title = "Lithium Theme"
 theme = "hugo-lithium-theme"
-googleAnalytics = ""
-disqusShortname = ""
 
 [permalinks]
     post = "/:year/:month/:day/:title/"
@@ -27,4 +25,3 @@ disqusShortname = ""
     width = 50
     height = 50
     alt = "Logo"
-
