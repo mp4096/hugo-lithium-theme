@@ -25,3 +25,6 @@ theme = "hugo-lithium-theme"
     width = 50
     height = 50
     alt = "Logo"
+
+    [params.footer]
+    items = ["Copyright", "Year"]
