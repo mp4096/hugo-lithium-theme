@@ -2,6 +2,8 @@ baseurl = "https://example.org"
 languageCode = "en-us"
 title = "Lithium Theme"
 theme = "hugo-lithium-theme"
+PygmentsCodeFences = true
+PygmentsUseClasses = true
 
 [permalinks]
     post = "/:year/:month/:day/:title/"

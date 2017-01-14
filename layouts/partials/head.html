@@ -28,4 +28,7 @@
 {{ end }}
 
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/main.css" media="all">
+{{ if .Params.Highlight }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax_highlighting.css" media="all">
+{{ end }}
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400|Lato:400,400italic,700">
