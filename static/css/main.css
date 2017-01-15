@@ -158,6 +158,7 @@ a {
 
 .highlight pre {
   padding: 10px;
+  overflow-x: auto;
 }
 
 .archive {
