@@ -1,3 +1,4 @@
 +++
-highlight = false
+hasHighlight = false
+hasTex = false
 +++

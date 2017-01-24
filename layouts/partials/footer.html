@@ -8,5 +8,8 @@
 
     </div>
 
+    {{ if .Params.HasTex }}
+      <script>renderMathInElement(document.body);</script>
+    {{ end }}
   </body>
 </html>
