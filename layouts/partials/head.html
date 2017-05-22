@@ -37,3 +37,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/contrib/auto-render.min.js"></script>
 {{ end }}
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400|Lato:400,400italic,700">
+{{ if .Site.Params.favicon.enabled }}
+  <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}{{ .Site.Params.favicon.url }}">
+{{ end }}
