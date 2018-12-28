@@ -28,5 +28,8 @@ PygmentsUseClasses = true
     height = 50
     alt = "Logo"
 
+    [params.icon]
+    url = "favicon.ico"
+
     [params.footer]
     items = ["Copyright", "Year"]
