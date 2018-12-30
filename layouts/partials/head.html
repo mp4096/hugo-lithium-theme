@@ -36,11 +36,5 @@
 {{ end }}
 {{ if .Params.HasTex }}
   {{ $stylesKatex := resources.Get "vendor/js/katex/v0.10.0/katex.min.css" | fingerprint }}
-
   <link rel="stylesheet" href="{{ $stylesKatex.Permalink }}" integrity="{{ $stylesKatex.Data.Integrity }}">
-
-  {{ $katexMain := resources.Get "vendor/js/katex/v0.10.0/katex.min.js" }}
-  {{ $katexAutoRender := resources.Get "vendor/js/katex/v0.10.0/contrib/auto-render.min.js" }}
-  {{ $katexBundle := slice $katexMain $katexAutoRender | resources.Concat "vendor/js/katex/v0.10.0/katexBundle.js" | fingerprint }}
-  <script src="{{ $katexBundle.Permalink }}" integrity="{{ $katexBundle.Data.Integrity }}"></script>
 {{ end }}

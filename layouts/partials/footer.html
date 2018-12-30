@@ -9,7 +9,11 @@
     </div>
 
     {{ if .Params.HasTex }}
-      <script>renderMathInElement(document.body);</script>
+      {{ $katexMain := resources.Get "vendor/js/katex/v0.10.0/katex.min.js" }}
+      {{ $katexAutoRender := resources.Get "vendor/js/katex/v0.10.0/contrib/auto-render.min.js" }}
+      {{ $katexRun := resources.Get "js/runKatex.js" }}
+      {{ $katexBundle := slice $katexMain $katexAutoRender $katexRun | resources.Concat "vendor/js/katex/v0.10.0/katexBundle.js" | fingerprint }}
+      <script src="{{ $katexBundle.Permalink }}" integrity="{{ $katexBundle.Data.Integrity }}"></script>
     {{ end }}
   </body>
 </html>
